@@ -20,7 +20,7 @@ Original function:
 function inject_callback(~slot,~cvar)  
 {  
   sp_sc_cvar_len ~len $~cvar  
-  sp_sv_client_cvar_set $~slot 69 $~len  
+  sp_sv_client_cvar_set $~slot 6 $~len  
 }  
   
 Now with aliases becomes:  
