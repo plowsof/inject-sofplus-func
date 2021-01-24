@@ -23,15 +23,4 @@ function inject_callback(~slot,~cvar)
   sp_sv_client_cvar_set $~slot 6 $~len  
 }  
   
-Now with aliases becomes:  
-alias f function  
-alias l sp_sc_cvar_len  
-alias s sp_sv_client_cvar_set  
-  
-f i(~s,~c)  
-{  
-  l ~l $~c  
-  s $~s 6 $~l  
-}  
-  
-This will set sp_cl_sv_6 on our client to the length of a cvar (if the function / and cvar exists on the server)  
+Making the func shorter with aliases tested and not working 
