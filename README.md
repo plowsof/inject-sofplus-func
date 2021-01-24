@@ -23,7 +23,7 @@ function inject_callback(~slot,~cvar)
   sp_sv_client_cvar_set $~slot 6 $~len  
 }  
   
-would look something like this: (just my theory)
+would look something like this: (just my theory)  
 set f function     
 set l sp_sc_cvar_len    
 set s sp_sv_client_cvar_set  
