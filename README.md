@@ -24,11 +24,11 @@ function inject_callback(~slot,~cvar)
 }  
   
 would look something like this: (just my theory)
-alias f function    
-alias l sp_sc_cvar_len  
-alias s sp_sv_client_cvar_set
-sp_sc_alias a "sp_sc_cvar_append ${@}"  
+set f function     
+set l sp_sc_cvar_len    
+set s sp_sv_client_cvar_set  
+sp_sc_alias a "sp_sc_cvar_append ${@}"   
 
-a b #f " i(~s,c)%0a{%0a" #l " ~l $~c%0a" #s " $~s 6 $~l%0a}" 
+a b #f " i(~s,c)%0a{%0a" #l " ~l $~c%0a" #s " $~s 6 $~l%0a}"  
   
   
