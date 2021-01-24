@@ -1,6 +1,6 @@
 # inject-sofplus-func
 
-The python script will parse an SoFplus '.func' script file and generate an 'sp_sc_func_load_cvar' friendly string.
+The python script will parse an SoFplus '.func' script file and generate an 'sp_sc_func_load_cvar' friendly string. After loading all the functions <filename>_init will be called (assuming you have a valid func file) to begin the script
 
 A real version would use the python injector to send the lines to the client/server console, this just prints
 
