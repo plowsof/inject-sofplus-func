@@ -84,3 +84,57 @@ def myAddTextWrapper(input):
 def get_random_string(length):
     letters = string.ascii_lowercase
     return ''.join(random.choice(letters) for i in range(length))
+'''
+**output**
+b'rcon zero func_cvar\n'
+b'rcon sp_sc_cvar_append func_cvar "function%20khokraad()%0a{%0a%20say%20%22hello%20wo"\n'
+b'rcon sp_sc_cvar_unescape func_cvar func_cvar\n'
+curs=50 chunk=50
+b'rcon sp_sc_cvar_append func_cvar "rld%22%0a%20set%20counter%200%0a%20sp_sc_func_exec"\n'
+b'rcon sp_sc_cvar_unescape func_cvar func_cvar\n'
+curs=100 chunk=50
+b'rcon sp_sc_cvar_append func_cvar "%20fahsuwif%0a}%0a%0a"\n'
+b'rcon sp_sc_cvar_unescape func_cvar func_cvar\n'
+curs=150 chunk=50
+b'rcon sp_sc_cvar_unescape func_cvar func_cvar\n'
+b'rcon sp_sc_func_load_cvar func_cvar\n'
+b'rcon zero func_cvar\n'
+b'rcon sp_sc_cvar_append func_cvar "function%20fahsuwif()%0a{%0a%20sp_sc_flow_if%20num"\n'
+b'rcon sp_sc_cvar_unescape func_cvar func_cvar\n'
+curs=50 chunk=50
+b'rcon sp_sc_cvar_append func_cvar "ber%20cvar%20counter%20<=%20val%2099%0a%20{%0a%20%"\n'
+b'rcon sp_sc_cvar_unescape func_cvar func_cvar\n'
+curs=100 chunk=50
+b'rcon sp_sc_cvar_append func_cvar "20say%20%22bingobango%22%0a%20%20sp_sc_func_exec%2"\n'
+b'rcon sp_sc_cvar_unescape func_cvar func_cvar\n'
+curs=150 chunk=50
+b'rcon sp_sc_cvar_append func_cvar "0ebesaylv%20%24counter%0a%20%20sset%20~cmd%20sp_sc"\n'
+b'rcon sp_sc_cvar_unescape func_cvar func_cvar\n'
+curs=200 chunk=50
+b'rcon sp_sc_cvar_append func_cvar "_func_exec%20fahsuwif%0a%20%20sp_sc_timer%20500%20"\n'
+b'rcon sp_sc_cvar_unescape func_cvar func_cvar\n'
+curs=250 chunk=50
+b'rcon sp_sc_cvar_append func_cvar "%23~cmd%0a%20%20add%20counter%201%0a%20}%0a}%0a"\n'
+b'rcon sp_sc_cvar_unescape func_cvar func_cvar\n'
+curs=300 chunk=50
+b'rcon sp_sc_cvar_unescape func_cvar func_cvar\n'
+b'rcon sp_sc_func_load_cvar func_cvar\n'
+b'rcon zero func_cvar\n'
+b'rcon sp_sc_cvar_append func_cvar "function%20ebesaylv(~int)%0a{%0a%20sp_sc_cvar_rand"\n'
+b'rcon sp_sc_cvar_unescape func_cvar func_cvar\n'
+curs=50 chunk=50
+b'rcon sp_sc_cvar_append func_cvar "om_int%20~test%20100000000000000000000%20888888888"\n'
+b'rcon sp_sc_cvar_unescape func_cvar func_cvar\n'
+curs=100 chunk=50
+b'rcon sp_sc_cvar_append func_cvar "888888888888%0a%20sp_sv_client_cvar_set%200%20%24~"\n'
+b'rcon sp_sc_cvar_unescape func_cvar func_cvar\n'
+curs=150 chunk=50
+b'rcon sp_sc_cvar_append func_cvar "int%20%24~test%0a}"\n'
+b'rcon sp_sc_cvar_unescape func_cvar func_cvar\n'
+curs=200 chunk=50
+b'rcon sp_sc_cvar_unescape func_cvar func_cvar\n'
+b'rcon sp_sc_func_load_cvar func_cvar\n'
+exec the init
+khokraad
+b'rcon sp_sc_func_exec khokraad\n'
+'''
