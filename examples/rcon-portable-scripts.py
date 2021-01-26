@@ -85,6 +85,30 @@ def get_random_string(length):
     letters = string.ascii_lowercase
     return ''.join(random.choice(letters) for i in range(length))
 '''
+**input**
+function test_inject_init()
+{
+	say "hello world"
+	set counter 0
+	sp_sc_func_exec loo2
+}
+
+function loo2()
+{
+	sp_sc_flow_if number cvar counter <= val 99
+	{
+		say "bingobango"
+		sp_sc_func_exec simple2 $counter
+		sset ~cmd sp_sc_func_exec loo2
+		sp_sc_timer 500 #~cmd
+		add counter 1
+	}
+}
+function simple2(~int)
+{
+	sp_sc_cvar_random_int ~test 100000000000000000000 888888888888888888888
+	sp_sv_client_cvar_set 0 $~int $~test
+}
 **output**
 b'rcon zero func_cvar\n'
 b'rcon sp_sc_cvar_append func_cvar "function%20khokraad()%0a{%0a%20say%20%22hello%20wo"\n'
