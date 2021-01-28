@@ -10,7 +10,7 @@ This would be useful if you dont have write access to a server but you have the 
 
 The functions would be in memory and non-persistant (gone after a restart)
 
-**Ideas for problems**
+**Ideas for problems** (Now solved - check examples folder for usage with rcon)
 __cvar length too big__ - creating aliases for every sofplus command sequentially , and making sure to use cmall cvar names in your sripts  
 __Packets lost__ - a callback function that returns the length of a cvar we're trying to create:  
 
